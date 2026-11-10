@@ -1,0 +1,57 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"><title>Denis Time eval 2026-11-10T05-49-53</title>
+<style>
+body{font-family:system-ui,sans-serif;margin:20px;color:#1e293b;background:#f5f7fb}
+h1{color:#172554}.cards{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0}
+.card{background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:10px 14px;min-width:120px}
+.card b{display:block;font-size:22px;color:#172554}
+table{border-collapse:collapse;width:100%;background:#fff;font-size:13px}
+td,th{border:1px solid #e2e8f0;padding:8px;vertical-align:top;text-align:left}
+th{background:#172554;color:#fff}tr.bad td:last-child{color:#dc2626;font-weight:700}
+tr.ok td:last-child{color:#16a34a;font-weight:700}.ans{max-width:420px}.exp{color:#64748b}.warn{color:#b45309}
+</style></head><body>
+<h1>Denis Time chat bot: evaluation</h1>
+<p>2026-11-10T05:49:53.146Z · 3 tests · judge: claude-sonnet-5-5</p>
+<div class="cards">
+  <div class="card"><b>100%</b>overall pass</div>
+  <div class="card"><b>100%</b>code checks</div>
+  <div class="card"><b>100%</b>judge pass</div>
+  <div class="card"><b>3.00</b>relevance /5</div>
+  <div class="card"><b>4.33</b>accuracy /5</div>
+  <div class="card"><b>4.00</b>clarity /5</div>
+  <div class="card"><b>100%</b>safety</div>
+  <div class="card"><b>$0.020</b>judge cost</div>
+</div>
+<p>By category: recommend 3/3</p>
+<table><tr><th>Test</th><th>Question</th><th>Bot answer</th><th>Code checks</th><th>AI judge</th><th>Result</th></tr>
+  <tr class="ok">
+    <td><b>rec-01</b><br><small>recommend</small></td>
+    <td>I have a 3.5 GPA and want to study nursing. I live in Columbus.<br><small class="exp">Expect: Suggests real scholarships that fit nursing/health and/or Columbus/Ohio, each with amount and deadline.</small></td>
+    <td class="ans">Here are some scholarships that might be a great fit for you:<br><br>1. **Jack Kent Cooke Foundation College Scholarship**<br>   - Amount: Up to $55,000/year<br>   - Deadline: 2026-11-20<br>   - Min GPA: 3.5<br>   - [More Info](scholarship?id=7)<br><br>2. **Ohio Nurses Association Scholarship**<br>   - Amount: $1,000–$3,000<br>   - Deadline: 2027-02-15<br>   - Min GPA: 2.5<br>   - [More Info](scholarship?id=63)<br><br>3. **Columbus Foundation Scholarship**<br>   - Amount: $1,000–$10,000 (varies by award)<br>   - Deadline: 2027-03-01<br>   - Min GPA: 2.5<br>   - [More Info](scholarship?id=39)<br><br>4. **Cleveland Foundation Scholarship**<br>   - Amount: $1,500–$10,000 (varies by award)<br>   - Deadline: 2027-02-15<br>   - Min GPA: 2.5<br>   - [More Info](scholarship?id=40)<br><br>5. **University of Toledo Merit Scholarship**<br>   - Amount: $1,250–$28,000/year<br>   - Deadline: 2026-12-15<br>   - Min GPA: 3<br>   - [More Info](scholarship?id=214)<br><br>Make sure to check the official scholarship websites for the final rules and details. Good luck!</td>
+    <td>✅ 
+        <br><small class="warn">⚠ Link text "More Info" doesn't match the name "Jack Kent Cooke Foundation College Scholarship" (id 7)<br>⚠ Link text "More Info" doesn't match the name "Ohio Nurses Association Scholarship" (id 63)<br>⚠ Link text "More Info" doesn't match the name "Columbus Foundation Scholarship" (id 39)<br>⚠ Link text "More Info" doesn't match the name "Cleveland Foundation Scholarship" (id 40)<br>⚠ Link text "More Info" doesn't match the name "University of Toledo Merit Scholarship" (id 214)</small></td>
+    <td>✅
+        R3 A5 C4 <br><small>All facts match DATA, and the answer includes the Ohio Nurses Association and Columbus Foundation scholarships, which fit nursing and Columbus. The Cleveland Foundation scholarship is for Cleveland residents, so it is a poor fit for a Columbus student, and the Jack Kent Cooke and Toledo picks are only generic fits.</small></td>
+    <td>PASS</td>
+  </tr>
+  <tr class="ok">
+    <td><b>rec-02</b><br><small>recommend</small></td>
+    <td>3.8 gpa electrical engineering cincinnati<br><small class="exp">Expect: Suggests engineering and/or Cincinnati scholarships from the list.</small></td>
+    <td class="ans">Here are some scholarships that might be a great fit for you:<br><br>1. **[Buick Achievers Scholarship](scholarship?id=8)**  <br>   Amount: $25,000 (renewable)  <br>   Deadline: 2027-02-28  <br>   Min GPA: 3  <br>   Majors: Engineering, Technology, Science, Mathematics, Business  <br><br>2. **[Society of Women Engineers Scholarship](scholarship?id=16)**  <br>   Amount: Up to $10,000  <br>   Deadline: 2027-02-15  <br>   Min GPA: 3  <br>   Majors: Engineering, Computer Science, Technology  <br><br>3. **[Cleveland Cavaliers Scholarship Program](scholarship?id=132)**  <br>   Amount: $10,000  <br>   Deadline: 2027-01-31  <br>   Min GPA: 3  <br>   Any major, but located in NE Ohio  <br><br>4. **[Ohio Society of Professional Engineers Scholarship](scholarship?id=221)**  <br>   Amount: $1,000–$2,500/year (renewable)  <br>   Deadline: 2027-02-15  <br>   Min GPA: 3  <br>   Majors: Engineering, Engineering Technology  <br><br>5. **[American Institute of Chemical Engineers Scholarship](scholarship?id=235)**  <br>   Amount: $1,000–$5,000  <br>   Deadline: 2027-02-15  <br>   Min GPA: 3  <br>   Majors: Chemical Engineering, Biochemical Engineering, Materials Science  <br><br>Make sure to check the official scholarship websites for the most accurate and updated information. Good luck!</td>
+    <td>✅ 
+        <br><small class="warn">⚠ Link text "Ohio Society of Professional Engineers Scholarship" doesn't match the name "Engineers Foundation of Ohio Scholarship" (id 221)</small></td>
+    <td>✅
+        R3 A4 C4 <br><small>Buick and Ohio engineers scholarships fit an electrical engineering student, and the amounts and deadlines match the data. Weaknesses: SWE is for women only, Cavaliers is NE Ohio (not Cincinnati), and AIChE is chemical engineering, with none of these caveats stated; the OSPE name differs slightly from the data's 'Engineers Foundation of Ohio Scholarship'.</small></td>
+    <td>PASS</td>
+  </tr>
+  <tr class="ok">
+    <td><b>rec-03</b><br><small>recommend</small></td>
+    <td>I want to study computer science. GPA 3.2. Cleveland.<br><small class="exp">Expect: Suggests computer science/technology or Cleveland scholarships that accept a 3.2 GPA.</small></td>
+    <td class="ans">Here are some scholarships you might be eligible for:<br><br>1. [Google Generation Scholarship](scholarship?id=26) - Amount: $10,000 | Deadline: 2027-04-01 | Min GPA: 3.2 | For majors: Computer Science, Computer Engineering, Software Engineering.<br><br>2. [Best Buy Foundation Scholarship](scholarship?id=68) - Amount: $2,500 | Deadline: 2027-02-01 | Min GPA: 2.5 | For majors: Computer Science, Technology, Engineering, Mathematics.<br><br>3. [Cleveland Foundation Scholarship](scholarship?id=40) - Amount: $1,500–$10,000 (varies by award) | Deadline: 2027-02-15 | Min GPA: 2.5 | Open to any major.<br><br>4. [Columbus Foundation Scholarship](scholarship?id=39) - Amount: $1,000–$10,000 (varies by award) | Deadline: 2027-03-01 | Min GPA: 2.5 | Open to any major.<br><br>5. [Ohio Association of Career Colleges and Schools Scholarship](scholarship?id=55) - Amount: $1,000 | Deadline: 2027-04-01 | Min GPA: 2 | For majors: Trades, Cosmetology, Culinary Arts, Healthcare, Technology.<br><br>Make sure to check the official scholarship websites for the most accurate and up-to-date information! Good luck!</td>
+    <td>✅ 
+        </td>
+    <td>✅
+        R3 A4 C4 <br><small>Google, Best Buy, and Cleveland Foundation fit a CS student in Cleveland with a 3.2 GPA, and all amounts, deadlines, and GPAs match the DATA. However, the Columbus Foundation is for Columbus, not Cleveland, so it is a poor fit, and the OACCS scholarship (trades/career colleges) is only loosely relevant; the answer also doesn't mention that some awards are need-based.</small></td>
+    <td>PASS</td>
+  </tr></table>
+</body></html>

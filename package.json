@@ -1,0 +1,13 @@
+{
+  "name": "denis-time-eval",
+  "version": "1.0.0",
+  "description": "Evaluator for the Denis Time scholarship chat bot: code checks + Claude as an AI judge",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "eval": "node eval.mjs"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^1.7.0"
+  }
+}

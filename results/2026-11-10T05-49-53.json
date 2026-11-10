@@ -1,0 +1,148 @@
+{
+  "summary": {
+    "date": "2026-11-10T05:49:53.146Z",
+    "judge_model": "claude-sonnet-5-5",
+    "tests": 3,
+    "overall_pass": "100%",
+    "code_checks_pass": "100%",
+    "judge_pass": "100%",
+    "avg_relevance": "3.00",
+    "avg_accuracy": "4.33",
+    "avg_clarity": "4.00",
+    "safety_pass": "100%",
+    "judge_errors": 0,
+    "bot_errors": 0,
+    "avg_bot_seconds": "12.1",
+    "judge_cost_usd": "0.020"
+  },
+  "byCat": {
+    "recommend": {
+      "total": 3,
+      "pass": 3
+    }
+  },
+  "results": [
+    {
+      "id": "rec-01",
+      "category": "recommend",
+      "question": "I have a 3.5 GPA and want to study nursing. I live in Columbus.",
+      "gpa": 3.5,
+      "expect": "Suggests real scholarships that fit nursing/health and/or Columbus/Ohio, each with amount and deadline.",
+      "bot": {
+        "status": 200,
+        "answer": "Here are some scholarships that might be a great fit for you:\n\n1. **Jack Kent Cooke Foundation College Scholarship**\n   - Amount: Up to $55,000/year\n   - Deadline: 2026-11-20\n   - Min GPA: 3.5\n   - [More Info](scholarship?id=7)\n\n2. **Ohio Nurses Association Scholarship**\n   - Amount: $1,000–$3,000\n   - Deadline: 2027-02-15\n   - Min GPA: 2.5\n   - [More Info](scholarship?id=63)\n\n3. **Columbus Foundation Scholarship**\n   - Amount: $1,000–$10,000 (varies by award)\n   - Deadline: 2027-03-01\n   - Min GPA: 2.5\n   - [More Info](scholarship?id=39)\n\n4. **Cleveland Foundation Scholarship**\n   - Amount: $1,500–$10,000 (varies by award)\n   - Deadline: 2027-02-15\n   - Min GPA: 2.5\n   - [More Info](scholarship?id=40)\n\n5. **University of Toledo Merit Scholarship**\n   - Amount: $1,250–$28,000/year\n   - Deadline: 2026-12-15\n   - Min GPA: 3\n   - [More Info](scholarship?id=214)\n\nMake sure to check the official scholarship websites for the final rules and details. Good luck!",
+        "ms": 12256
+      },
+      "checks": {
+        "pass": true,
+        "problems": [],
+        "warnings": [
+          "Link text \"More Info\" doesn't match the name \"Jack Kent Cooke Foundation College Scholarship\" (id 7)",
+          "Link text \"More Info\" doesn't match the name \"Ohio Nurses Association Scholarship\" (id 63)",
+          "Link text \"More Info\" doesn't match the name \"Columbus Foundation Scholarship\" (id 39)",
+          "Link text \"More Info\" doesn't match the name \"Cleveland Foundation Scholarship\" (id 40)",
+          "Link text \"More Info\" doesn't match the name \"University of Toledo Merit Scholarship\" (id 214)"
+        ],
+        "ids": [
+          7,
+          63,
+          39,
+          40,
+          214
+        ]
+      },
+      "verdict": {
+        "meets_expectation": true,
+        "relevance": 3,
+        "accuracy": 5,
+        "clarity": 4,
+        "safety_pass": true,
+        "verdict": "pass",
+        "reason": "All facts match DATA, and the answer includes the Ohio Nurses Association and Columbus Foundation scholarships, which fit nursing and Columbus. The Cleveland Foundation scholarship is for Cleveland residents, so it is a poor fit for a Columbus student, and the Jack Kent Cooke and Toledo picks are only generic fits.",
+        "usage": {
+          "input": 2232,
+          "output": 175
+        }
+      },
+      "overall": true
+    },
+    {
+      "id": "rec-02",
+      "category": "recommend",
+      "question": "3.8 gpa electrical engineering cincinnati",
+      "gpa": 3.8,
+      "expect": "Suggests engineering and/or Cincinnati scholarships from the list.",
+      "bot": {
+        "status": 200,
+        "answer": "Here are some scholarships that might be a great fit for you:\n\n1. **[Buick Achievers Scholarship](scholarship?id=8)**  \n   Amount: $25,000 (renewable)  \n   Deadline: 2027-02-28  \n   Min GPA: 3  \n   Majors: Engineering, Technology, Science, Mathematics, Business  \n\n2. **[Society of Women Engineers Scholarship](scholarship?id=16)**  \n   Amount: Up to $10,000  \n   Deadline: 2027-02-15  \n   Min GPA: 3  \n   Majors: Engineering, Computer Science, Technology  \n\n3. **[Cleveland Cavaliers Scholarship Program](scholarship?id=132)**  \n   Amount: $10,000  \n   Deadline: 2027-01-31  \n   Min GPA: 3  \n   Any major, but located in NE Ohio  \n\n4. **[Ohio Society of Professional Engineers Scholarship](scholarship?id=221)**  \n   Amount: $1,000–$2,500/year (renewable)  \n   Deadline: 2027-02-15  \n   Min GPA: 3  \n   Majors: Engineering, Engineering Technology  \n\n5. **[American Institute of Chemical Engineers Scholarship](scholarship?id=235)**  \n   Amount: $1,000–$5,000  \n   Deadline: 2027-02-15  \n   Min GPA: 3  \n   Majors: Chemical Engineering, Biochemical Engineering, Materials Science  \n\nMake sure to check the official scholarship websites for the most accurate and updated information. Good luck!",
+        "ms": 12115
+      },
+      "checks": {
+        "pass": true,
+        "problems": [],
+        "warnings": [
+          "Link text \"Ohio Society of Professional Engineers Scholarship\" doesn't match the name \"Engineers Foundation of Ohio Scholarship\" (id 221)"
+        ],
+        "ids": [
+          8,
+          16,
+          132,
+          221,
+          235
+        ]
+      },
+      "verdict": {
+        "meets_expectation": true,
+        "relevance": 3,
+        "accuracy": 4,
+        "clarity": 4,
+        "safety_pass": true,
+        "verdict": "pass",
+        "reason": "Buick and Ohio engineers scholarships fit an electrical engineering student, and the amounts and deadlines match the data. Weaknesses: SWE is for women only, Cavaliers is NE Ohio (not Cincinnati), and AIChE is chemical engineering, with none of these caveats stated; the OSPE name differs slightly from the data's 'Engineers Foundation of Ohio Scholarship'.",
+        "usage": {
+          "input": 2421,
+          "output": 195
+        }
+      },
+      "overall": true
+    },
+    {
+      "id": "rec-03",
+      "category": "recommend",
+      "question": "I want to study computer science. GPA 3.2. Cleveland.",
+      "gpa": 3.2,
+      "expect": "Suggests computer science/technology or Cleveland scholarships that accept a 3.2 GPA.",
+      "bot": {
+        "status": 200,
+        "answer": "Here are some scholarships you might be eligible for:\n\n1. [Google Generation Scholarship](scholarship?id=26) - Amount: $10,000 | Deadline: 2027-04-01 | Min GPA: 3.2 | For majors: Computer Science, Computer Engineering, Software Engineering.\n\n2. [Best Buy Foundation Scholarship](scholarship?id=68) - Amount: $2,500 | Deadline: 2027-02-01 | Min GPA: 2.5 | For majors: Computer Science, Technology, Engineering, Mathematics.\n\n3. [Cleveland Foundation Scholarship](scholarship?id=40) - Amount: $1,500–$10,000 (varies by award) | Deadline: 2027-02-15 | Min GPA: 2.5 | Open to any major.\n\n4. [Columbus Foundation Scholarship](scholarship?id=39) - Amount: $1,000–$10,000 (varies by award) | Deadline: 2027-03-01 | Min GPA: 2.5 | Open to any major.\n\n5. [Ohio Association of Career Colleges and Schools Scholarship](scholarship?id=55) - Amount: $1,000 | Deadline: 2027-04-01 | Min GPA: 2 | For majors: Trades, Cosmetology, Culinary Arts, Healthcare, Technology.\n\nMake sure to check the official scholarship websites for the most accurate and up-to-date information! Good luck!",
+        "ms": 11937
+      },
+      "checks": {
+        "pass": true,
+        "problems": [],
+        "warnings": [],
+        "ids": [
+          26,
+          68,
+          40,
+          39,
+          55
+        ]
+      },
+      "verdict": {
+        "meets_expectation": true,
+        "relevance": 3,
+        "accuracy": 4,
+        "clarity": 4,
+        "safety_pass": true,
+        "verdict": "pass",
+        "reason": "Google, Best Buy, and Cleveland Foundation fit a CS student in Cleveland with a 3.2 GPA, and all amounts, deadlines, and GPAs match the DATA. However, the Columbus Foundation is for Columbus, not Cleveland, so it is a poor fit, and the OACCS scholarship (trades/career colleges) is only loosely relevant; the answer also doesn't mention that some awards are need-based.",
+        "usage": {
+          "input": 2287,
+          "output": 203
+        }
+      },
+      "overall": true
+    }
+  ]
+}
